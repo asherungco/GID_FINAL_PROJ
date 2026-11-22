@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#FAF7F2">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="description" content="BrewGo - order coffee ahead.">
+<title>BrewGo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<noscript>BrewGo needs JavaScript to run.</noscript>
+
+<!-- Shared gradients used by the product illustrations -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="gBg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F8EFE3"/><stop offset="1" stop-color="#E6D2B8"/></linearGradient>
+    <linearGradient id="gSauc" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#D9D4CE"/></linearGradient>
+    <linearGradient id="gCup" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FFFFFF"/><stop offset=".7" stop-color="#F1EEE9"/><stop offset="1" stop-color="#CFC9C2"/></linearGradient>
+    <linearGradient id="gGold" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#EDB057"/><stop offset=".55" stop-color="#D98E34"/><stop offset="1" stop-color="#B2661F"/></linearGradient>
+    <linearGradient id="gDome" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E9B060"/><stop offset="1" stop-color="#B9752D"/></linearGradient>
+    <linearGradient id="gLatte" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#C9A072"/><stop offset="1" stop-color="#6B4223"/></linearGradient>
+    <linearGradient id="gMatcha" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#A9CB86"/><stop offset="1" stop-color="#5F8D3C"/></linearGradient>
+    <linearGradient id="gAmer" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3A2314"/><stop offset="1" stop-color="#1F120A"/></linearGradient>
+  </defs>
+</svg>
+
+<div class="stage">
+  <main class="app" id="app" data-tabs="false">
+    <section class="screen" id="s-splash"  data-state="hidden" aria-label="Welcome"></section>
+    <section class="screen" id="s-login"   data-state="hidden" aria-label="Log in"></section>
+    <section class="screen" id="s-home"    data-state="hidden" aria-label="Home"></section>
+    <section class="screen" id="s-orders"  data-state="hidden" aria-label="Orders"></section>
+    <section class="screen" id="s-profile" data-state="hidden" aria-label="Profile"></section>
+    <section class="screen" id="s-detail"  data-state="hidden" aria-label="Product details"></section>
+    <section class="screen" id="s-checkout" data-state="hidden" aria-label="Checkout"></section>
+    <section class="screen" id="s-confirm" data-state="hidden" aria-label="Order confirmed"></section>
+    <section class="screen" id="s-contact" data-state="hidden" aria-label="Contact us"></section>
+
+    <nav class="tabs" id="tabs" aria-label="Main"></nav>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </main>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
